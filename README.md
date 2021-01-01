@@ -1,4 +1,4 @@
-# weather-app
+## weather-app
 <h1> Weather API Integration using Node.js </h1>
 
 <a href="https://weatherstack.com/"> Watherstack Website </a> 

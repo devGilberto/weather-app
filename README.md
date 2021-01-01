@@ -9,7 +9,11 @@
 So, it won't be display here any sensitive data!
 
 <br>
-
+<h4> ⚙ Tools for development: </h4>
+Visual Studio Code | 
+Git BASH |
+Node.js LTS
+<br>
 <h3> API Authentication </h3>
 Required HTTP GET Request Parameters: access_key query 
 <br>

@@ -14,6 +14,7 @@ Doing API Integration using Node.js:
     <ul>
       <li> <a href="https://www.mapbox.com/"> MapBox Website </a>  </li>
       <li> <a href="https://docs.mapbox.com/"> MapBox Docs </a>  </li>
+      <li> <a href="https://docs.mapbox.com/api/search/geocoding/"> MapBox Docs - Geocoding </a>  </li>      
     </ul>
   </li>
 </ul>

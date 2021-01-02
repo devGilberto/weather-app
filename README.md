@@ -1,8 +1,26 @@
-<h1> Weather API Integration using Node.js </h1>
+<h1> Weather App</h1>
 
-<a href="https://weatherstack.com/"> Watherstack Website </a> 
+Doing API Integration using Node.js:
+<ul>
+  <li>
+    Weather
+    <ul>
+      <li> <a href="https://weatherstack.com/"> Watherstack Website </a></li>
+      <li> <a href="https://weatherstack.com/quickstart"> Watherstack Quickstart </a> </li>
+    </ul>
+  </li>
+  <li> 
+    Geocoding
+    <ul>
+      <li> <a href="https://www.mapbox.com/"> MapBox Website </a>  </li>
+      <li> <a href="https://docs.mapbox.com/"> MapBox Docs </a>  </li>
+      <li> <a href="https://docs.mapbox.com/api/search/geocoding/"> MapBox Docs - Geocoding </a>  </li>      
+    </ul>
+  </li>
+</ul>
+ 
 <br>
-<a href="https://weatherstack.com/quickstart"> Watherstack Quickstart </a>
+
 
 
 <b> Note: </b> Security measures -> Environment Variables (dotenv package) will be used in .env file which will be add in .gitignore file.

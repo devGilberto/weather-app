@@ -4,7 +4,7 @@ if(process.env.NODE_ENV !== "production") {
     require('dotenv').config();
 }
 
-/* const ak = process.env.ACCESS_KEY_WEATHERSTACK;
+const ak = process.env.ACCESS_KEY_WEATHERSTACK;
 //const url = 'http://api.weatherstack.com/current?access_key=' + ak + '&query=39.154444,-9.066111';
 const url = 'http://api.weatherstack.com/forecast?access_key=' + ak + '&query=';
 // const url = 'http://api.weatherstack.com/forecast?access_key=' + ak + '&query=39.154444,-9.06611&forecast_days =7&hourly=0&units=m';
@@ -25,7 +25,6 @@ request({url: url, json: true}, (error, response) => {  //,body
     }
    
 });
- */
 
 
 //Geocoding

@@ -8,14 +8,28 @@ const forecast = (latitude, longitude, callback) => {
     const url = 'http://api.weatherstack.com/current?access_key=' + ak + '&query=' + latitude +',' + longitude + '&units=m';
     // const url = 'http://api.weatherstack.com/current?access_key=' + ak + '&query=' + longitude +',' + latitude + '&units=m';
 
+    //shorthand syntax
+    // url: url 
+    // something with 
+    // url
+    // ****************** 
+    //response
+    //changed to
+    // { body }
+    request({url, json: true}, (error, { body }) => {
+        const forecastObj = {
+            weather_descriptions: body.current.weather_descriptions[0],
+            temperature: body.current.temperature,
+            feelslike: body.current.feelslike 
+        };
 
-
-    request({url: url, json: true}, (error, response) => {
+        //destructuring syntax
+        const { weather_descriptions, temperature, feelslike} = forecastObj;
 
         if(error){
             callback('Unable to connect to weather service!', undefined);
         }
-            else if(response.body.error){
+            else if(body.error){
                 callback('Unable to find location.', undefined);
 
         }
@@ -26,11 +40,11 @@ const forecast = (latitude, longitude, callback) => {
                 //     latitude: latitude, 
                 //     longitude: longitude
                 // }
-                response.body.current.weather_descriptions[0] + 
+                weather_descriptions +
                 ". It is currently " + 
-                response.body.current.temperature + 
+                temperature + 
                 " degrees out. It feels like " + 
-                response.body.current.feelslike + 
+                feelslike  +
                 " degrees out."
             );
 

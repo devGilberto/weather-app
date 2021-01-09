@@ -14,19 +14,19 @@ if (!address){
 else{
     // //Geocoding
     // //Address -> Lat/Long -> Weather
-    geocode(address, (error, data) => {
+    geocode(address, (error, { latitude, longitude, location} = {}) => {
         if (error){
             return console.log(error);
         }
         
 
         
-        forecast(data.latitude, data.longitude, (error, forecastData) => {  //44.1545, -75.7088
+        forecast(latitude, longitude, (error, forecastData) => {  //44.1545, -75.7088
             if (error){
                 return console.log(error);
             }
 
-            console.log(data.location)
+            console.log(location)
             console.log(forecastData)
         });
     });

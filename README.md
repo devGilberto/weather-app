@@ -33,23 +33,14 @@ Git BASH |
 Node.js LTS |
 <a href='https://www.npmjs.com/'> NPMJS </a>
 <br>
-<h3> API Authentication </h3>
-Required HTTP GET Request Parameters: access_key query 
+<h3> Watherstack API Authentication  </h3>
+
 <br>
 Base URL: http://api.weatherstack.com/
 
 <br>
 
-Endpoints: 
-<ul>
-  <li> current </li>
-  <li> historical </li>
-  <li> forecast </li>
-</ul>
-
-<br>
-
-Required Parameters: 
+Required HTTP GET Request Parameters: 
 <ul>
   <li> access_key </li>
   <li> query </li>
@@ -62,3 +53,44 @@ Required Parameters:
     </ul>
   </li>
 </ul>
+
+<br>
+Endpoints: 
+<ul>
+  <li> current </li>
+  <li> historical </li>
+  <li> forecast </li>
+</ul>
+
+
+<hr> 
+
+<h3> Mapbox API Authentication  </h3>
+
+<br>
+Base URL: http://api.mapbox.com/  
+<br>
+https://api.mapbox.com/{endpoint}?access_token={your_access_token}
+<br>
+
+Required HTTP GET Request Parameters: 
+<ul>
+  <li> token </li>
+  
+  <li> 
+    <i> Others: </i>
+    <ul>
+      <li> profile </li>
+      <li> coordinates </li>
+    </ul>
+  </li>
+</ul>
+
+<br>
+Endpoints: 
+<ul>
+  <li> mapbox.places </li>
+  <li> mapbox.places-permanent </li>
+</ul>
+
+
